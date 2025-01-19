@@ -1,1 +1,63 @@
-initial commit
+	<!DOCTYPE html>
+<html>
+   <head>
+   <title>Khadus ki jaan ka first official code</title>
+      <style>
+        body {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: 'Comic Sans MS', cursive;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            margin-top: 50px;
+        } 
+    </style>
+    <script>
+        function validateSelection() {
+            const radios = document.getElementsByName("proposal");
+            let isChecked = false;
+            for (const radio of radios) {
+                if (radio.checked) {
+                    isChecked = true;
+                    break;
+                }
+            }
+            if (!isChecked) {
+                alert("Please select an option before proceeding.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+   </head>
+   <body>	
+<h1>This is for you my love &#10084;</h1>
+   <p style="font-family:courier;">
+       I know I always ask for breakup like always<br>
+       as if I don't love you jaisa useych<br>
+       I am gonna propose you again this time<br>
+       but with a twist its our 3rd year together mashallah I wanna make it thoda spl &#128522.
+   </p>
+  
+ <h2 style="font-family:cursive;">Will you be my boyfriend again &#128081;</h2>
+  <p style="font-family:courier;">You have to be serious while choosing.</p>
+        	
+    <form>
+        <h4 style="font-family:cursive; font-size:25;">
+            <input type="radio" id="proposal1" name="proposal" value="Yes">
+            <label for="proposal1">Yes &#128149</label><br>
+            <input type="radio" id="proposal2" name="proposal" value="No" disabled>
+            <label for="proposal2">No &#128542</label><br>
+            <input type="radio" id="proposal3" name="proposal" value="Its always yes with you ">
+            <label for="proposal3">It's always Yes with you &#128150</label><br>
+        </h4>
+        <br>
+        <a href="my first code2nd page.html" style="color:white"  onclick="return validateSelection();">Next </a>
+   
+    </form>
+</body>
+</html>
+  
